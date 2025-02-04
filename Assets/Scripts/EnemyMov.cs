@@ -7,6 +7,7 @@ public class EnemyMov : MonoBehaviour
     [SerializeField]
     float speed = 10f;
 
+
     Transform playerTransform; // Reference to the player's transform
     Vector3 initialScale;      // Store the initial scale of the sprite
 
