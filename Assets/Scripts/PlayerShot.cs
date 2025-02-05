@@ -18,6 +18,18 @@ public class PlayerShot : MonoBehaviour
 
     float lastShootTime = -1f; // Tracks the last time the player shot
 
+    private GameLogic gameLogic; // Reference to the GameLogic script
+
+    void Start()
+    {
+        // Find the GameLogic script in the scene
+        gameLogic = FindObjectOfType<GameLogic>();
+        if (gameLogic == null)
+        {
+            Debug.LogError("GameLogic script not found in the scene!");
+        }
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && Time.time >= lastShootTime + shootCooldown) // Left click and cooldown check
@@ -56,10 +68,11 @@ public class PlayerShot : MonoBehaviour
                 RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, direction, maxShootDistance, collisionMask);
                 GameObject hitObject = hitInfo.collider.gameObject;
 
-                // If the hit object is tagged as "Enemy", destroy it
+                // If the hit object is tagged as "Enemy", destroy it and update the score
                 if (hitObject.CompareTag("Enemy"))
                 {
                     Destroy(hitObject);
+                    gameLogic.IncrementScore(); // Notify GameLogic to increment the score
                     return;
                 }
             }
@@ -96,6 +109,7 @@ public class PlayerShot : MonoBehaviour
 
             // Destroy the enemy if it's hit and not out of sight
             Destroy(enemy);
+            gameLogic.IncrementScore(); // Notify GameLogic to increment the score
         }
     }
 }
