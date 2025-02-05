@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMov : MonoBehaviour
 {
-    [SerializeField]
-    float movementSpeed;
+    //[SerializeField]
+    float movementSpeed = 5f;
+
 
     void Update()
     {
@@ -27,21 +28,23 @@ public class PlayerMov : MonoBehaviour
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
     }
 
-    void FlipSprite()
+    public void FlipSprite()
     {
         // Get the mouse position in world space
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
+        bool flipped;
         // Check if the mouse is to the left or right of the player
         if (mousePosition.x < transform.position.x)
         {
             // Flip the sprite to face left
             transform.localScale = new Vector3(-1, 1, 1);
+            flipped = true;
         }
         else
         {
             // Flip the sprite to face right
             transform.localScale = new Vector3(1, 1, 1);
+            flipped = false;
         }
     }
 }
