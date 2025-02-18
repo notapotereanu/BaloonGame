@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Required for UI components
+using UnityEngine.UI; 
+using UnityEngine.SceneManagement; 
 
 public class GameLogic : MonoBehaviour
 {
@@ -10,23 +11,37 @@ public class GameLogic : MonoBehaviour
     private bool gameEnded = false; // Track if the game has ended
 
     [SerializeField]
-    private Text scoreText; // Reference to the UI Text for the score
+    private Text scoreText; 
 
     [SerializeField]
-    private Text timerText; // Reference to the UI Text for the timer
+    private Text timerText; 
 
     [SerializeField]
-    private Text gameOverText; // Reference to the UI Text for the game over message
+    private Text gameOverText; 
 
     [SerializeField]
-    private float winTime = 300f; // 5 minutes in seconds
+    private Button nextLevelButton; 
+
+    [SerializeField]
+    private float winTime = 300f; // 5 minutes in seconds 
+
+    [SerializeField]
+    private PlayerShot playerShot; 
+
+    [SerializeField]
+    private PlayerMov playerMov; 
 
     void Start()
     {
-        // Initialize the game over text as hidden
+
+        // Initialize the game over text and button as hidden
         if (gameOverText != null)
         {
             gameOverText.gameObject.SetActive(false);
+        }
+        if (nextLevelButton != null)
+        {
+            nextLevelButton.gameObject.SetActive(false);
         }
     }
 
@@ -47,10 +62,11 @@ public class GameLogic : MonoBehaviour
             timerText.text = "Time: " + Mathf.FloorToInt(timer).ToString();
         }
 
-        // Check for win condition (5 minutes)
-        if (timer >= winTime)
+        // Check for win condition 
+        if (!gameEnded && timer >= winTime)
         {
-            EndGame("YOU WIN!");
+            EndGame("YOU WIN!", true); // Pass true to indicate a win
+            gameEnded = true; // Ensure the game ends immediately
         }
     }
 
@@ -67,11 +83,27 @@ public class GameLogic : MonoBehaviour
     }
 
     // Method to handle game over
-    public void EndGame(string message)
+    public void EndGame(string message, bool isWin = false)
     {
+        // If the game has already ended, return
+        if (gameEnded)
+        {
+            return;
+        }
+
         // Freeze the game
         gameEnded = true;
         Time.timeScale = 0f; // Stop all game activity
+
+        // Disable the PlayerShot and PlayerMov scripts
+        if (playerShot != null)
+        {
+            playerShot.enabled = false;
+        }
+        if (playerMov != null)
+        {
+            playerMov.enabled = false;
+        }
 
         // Display the game over message
         if (gameOverText != null)
@@ -79,15 +111,42 @@ public class GameLogic : MonoBehaviour
             gameOverText.text = message + "\nYour score: " + score;
             gameOverText.gameObject.SetActive(true);
         }
+
+        // Show the "Go to next level" button if the player wins and it's not Level3
+        if (isWin && nextLevelButton != null)
+        {
+            string currentScene = SceneManager.GetActiveScene().name;
+            if (currentScene != "Level3") 
+            {
+                nextLevelButton.gameObject.SetActive(true);
+            }
+        }
     }
 
-    // Detect collisions with the Balloon
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Method to load the next level
+    public void GoToNextLevel()
     {
-        // Check if the colliding object is tagged as "Enemy"
-        if (collision.gameObject.CompareTag("Enemy"))
+        Time.timeScale = 1f; // Unfreeze the game
+
+        // Get the current scene name
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        // Determine the next level based on the current scene
+        string nextLevel = "";
+        switch (currentScene)
         {
-            EndGame("GAME OVER");
+            case "Level1":
+                nextLevel = "Level2";
+                break;
+            case "Level2":
+                nextLevel = "Level3";
+                break;
+            default:
+                Debug.LogWarning("No next level defined for: " + currentScene);
+                return;
         }
+
+        // Load the next level
+        SceneManager.LoadScene(nextLevel);
     }
 }
