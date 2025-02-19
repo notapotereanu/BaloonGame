@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: 3793957431074438808
     second: Road_Curve_RL
+  - first:
+      213: -3314571180124887487
+    second: Road_Horizontal_Crosswalk_1
+  - first:
+      213: 5187983388583307477
+    second: Road_Horizontal_Crosswalk_2
+  - first:
+      213: 5527268154895078338
+    second: Road_Vertical_Crosswalk_1
+  - first:
+      213: -2136262074106158135
+    second: Road_Vertical_Crosswalk_2
+  - first:
+      213: 4918783452338477992
+    second: Road_Dead_End_1
+  - first:
+      213: -7297808474706320040
+    second: Road_Dead_End_2
+  - first:
+      213: 2438197253984577814
+    second: Road_Dead_End_3
+  - first:
+      213: -4279353618098311519
+    second: Road_Dead_End_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,11 +150,11 @@ TextureImporter:
       name: Sidewalk
       rect:
         serializedVersion: 2
-        x: 146
-        y: 318
+        x: 25
+        y: 674
         width: 47
         height: 48
-      alignment: 0
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -147,10 +171,10 @@ TextureImporter:
       name: Road_Curve_RU
       rect:
         serializedVersion: 2
-        x: 266
-        y: 254
-        width: 112
-        height: 112
+        x: 265
+        y: 612
+        width: 111
+        height: 111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,7 +193,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 265
-        y: 135
+        y: 493
         width: 112
         height: 111
       alignment: 0
@@ -190,7 +214,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 146
-        y: 135
+        y: 493
         width: 112
         height: 112
       alignment: 0
@@ -211,9 +235,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 25
-        y: 135
+        y: 493
         width: 112
-        height: 111
+        height: 112
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +256,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 25
-        y: 16
+        y: 374
         width: 112
         height: 112
       alignment: 0
@@ -253,7 +277,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 146
-        y: 16
+        y: 374
         width: 112
         height: 112
       alignment: 0
@@ -274,7 +298,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 266
-        y: 17
+        y: 374
         width: 112
         height: 110
       alignment: 0
@@ -286,6 +310,174 @@ TextureImporter:
       bones: []
       spriteID: 89e352cae28d6a430800000000000000
       internalID: 3793957431074438808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Horizontal_Crosswalk_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 255
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146a8e1b2174002d0800000000000000
+      internalID: -3314571180124887487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Horizontal_Crosswalk_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 255
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8a221a76b6ff740800000000000000
+      internalID: 5187983388583307477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Vertical_Crosswalk_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 136
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c399d62a1dc4bc40800000000000000
+      internalID: 5527268154895078338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Vertical_Crosswalk_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 136
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c363c546f87a52e0800000000000000
+      internalID: -2136262074106158135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Dead_End_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 256
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab54b33d77034440800000000000000
+      internalID: 4918783452338477992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Dead_End_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 135
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8556b429bd9f8ba90800000000000000
+      internalID: -7297808474706320040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Dead_End_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 16
+        width: 110
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61965100c7736d120800000000000000
+      internalID: 2438197253984577814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Road_Dead_End_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 15
+        width: 111
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aea7fcae8eac94c0800000000000000
+      internalID: -4279353618098311519
       vertices: []
       indices: 
       edges: []
