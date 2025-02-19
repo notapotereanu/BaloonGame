@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
-using UnityEngine.SceneManagement; 
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
@@ -11,29 +11,37 @@ public class GameLogic : MonoBehaviour
     private bool gameEnded = false; // Track if the game has ended
 
     [SerializeField]
-    private Text scoreText; 
+    private Text scoreText;
 
     [SerializeField]
-    private Text timerText; 
+    private Text timerText;
 
     [SerializeField]
-    private Text gameOverText; 
+    private Text livesText;
 
     [SerializeField]
-    private Button nextLevelButton; 
+    private Text gameOverText;
+
+    [SerializeField]
+    private Button nextLevelButton;
+
+    [SerializeField]
+    private Button tryAgainButton;
 
     [SerializeField]
     private float winTime = 300f; // 5 minutes in seconds 
 
     [SerializeField]
-    private PlayerShot playerShot; 
+    private PlayerShot playerShot;
 
     [SerializeField]
-    private PlayerMov playerMov; 
+    private PlayerMov playerMov;
+
+    // Static variable to store lives across levels
+    public static int lives = 3;
 
     void Start()
     {
-
         // Initialize the game over text and button as hidden
         if (gameOverText != null)
         {
@@ -43,6 +51,13 @@ public class GameLogic : MonoBehaviour
         {
             nextLevelButton.gameObject.SetActive(false);
         }
+        if (tryAgainButton != null)
+        {
+            tryAgainButton.gameObject.SetActive(false);
+        }
+
+        // Update the lives UI at the start of the scene
+        UpdateLivesUI();
     }
 
     void Update()
@@ -55,6 +70,12 @@ public class GameLogic : MonoBehaviour
 
         // Update the timer every frame
         timer += Time.deltaTime;
+
+        // Update the UI text for the timer
+        if (livesText != null)
+        {
+            livesText.text = "Lives: " + lives;
+        }
 
         // Update the UI text for the timer
         if (timerText != null)
@@ -80,6 +101,12 @@ public class GameLogic : MonoBehaviour
         {
             scoreText.text = "Score: " + score.ToString();
         }
+    }
+
+    public void decreaseLives()
+    {
+        lives--;
+        UpdateLivesUI(); // Update the lives UI when lives decrease
     }
 
     // Method to handle game over
@@ -116,10 +143,14 @@ public class GameLogic : MonoBehaviour
         if (isWin && nextLevelButton != null)
         {
             string currentScene = SceneManager.GetActiveScene().name;
-            if (currentScene != "Level3") 
+            if (currentScene != "Level3")
             {
                 nextLevelButton.gameObject.SetActive(true);
             }
+        }
+        if (isWin != true && tryAgainButton != null)
+        {
+            tryAgainButton.gameObject.SetActive(true);
         }
     }
 
@@ -148,5 +179,38 @@ public class GameLogic : MonoBehaviour
 
         // Load the next level
         SceneManager.LoadScene(nextLevel);
+    }
+
+    // Method to try again if the player has lost
+    public void TryAgain()
+    {
+        Time.timeScale = 1f; // Unfreeze the game
+
+        // Get the current scene name
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (lives > 0)
+        {
+            lives--;
+            UpdateLivesUI(); 
+            // Load the current level
+            SceneManager.LoadScene(currentScene);
+        }
+        else
+        {
+            // Load level 1
+            SceneManager.LoadScene("Level1");
+            lives = 3; // Reset lives 
+            UpdateLivesUI(); 
+        }
+    }
+
+    // Method to update the lives UI
+    private void UpdateLivesUI()
+    {
+        if (livesText != null)
+        {
+            livesText.text = "Lives: " + lives;
+        }
     }
 }

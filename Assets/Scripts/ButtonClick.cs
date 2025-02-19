@@ -15,6 +15,12 @@ public class ButtonClick : MonoBehaviour
         gameLogic.GoToNextLevel(); // Call the GoToNextLevel method in GameLogic
     }
 
+    // Method to load the current or first level
+    public void TryAgain()
+    {
+        gameLogic.TryAgain(); // Call the TryAgain method in GameLogic
+    }
+
     // Start is called before the first frame update
     void Start()
     {
