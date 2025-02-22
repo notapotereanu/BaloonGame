@@ -13,7 +13,7 @@ public class EnemyMov : MonoBehaviour
     void Start()
     {
         // Find the player by tag
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Balloon");
 
         if (player != null)
         {

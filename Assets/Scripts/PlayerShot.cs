@@ -16,6 +16,9 @@ public class PlayerShot : MonoBehaviour
     [SerializeField]
     float shootCooldown = 1f; // Time (in seconds) between shots
 
+    [SerializeField]
+    private int damage = 1; // Damage dealt per shot
+
     float lastShootTime = -1f; // Tracks the last time the player shot
 
     private GameLogic gameLogic; // Reference to the GameLogic script
@@ -68,11 +71,10 @@ public class PlayerShot : MonoBehaviour
                 RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, direction, maxShootDistance, collisionMask);
                 GameObject hitObject = hitInfo.collider.gameObject;
 
-                // If the hit object is tagged as "Enemy", destroy it and update the score
+                // If the hit object is tagged as "Enemy", deal damage
                 if (hitObject.CompareTag("Enemy"))
                 {
-                    Destroy(hitObject);
-                    gameLogic.IncrementScore(); // Notify GameLogic to increment the score
+                    DealDamage(hitObject);
                     return;
                 }
             }
@@ -107,9 +109,25 @@ public class PlayerShot : MonoBehaviour
                 continue;
             }
 
-            // Destroy the enemy if it's hit and not out of sight
-            Destroy(enemy);
-            gameLogic.IncrementScore(); // Notify GameLogic to increment the score
+            // Deal damage to the enemy
+            DealDamage(enemy);
+        }
+    }
+
+    // Method to deal damage to an enemy
+    private void DealDamage(GameObject enemy)
+    {
+        // Get the EnemyHealth component from the enemy
+        EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+        if (enemyHealth != null)
+        {
+            enemyHealth.TakeDamage(damage); // Deal damage to the enemy
+
+            // Check if the enemy is destroyed
+            if (enemyHealth.IsDead())
+            {
+                gameLogic.IncrementScore(); // Notify GameLogic to increment the score
+            }
         }
     }
 }

@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -363,6 +364,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9aa3ed38c27bb943ac093bea7800c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7738235179572519894}
+  offset: {x: 0, y: 0, z: -10}
+  smoothSpeed: 0.125
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1147,6 +1163,7 @@ MonoBehaviour:
     type: 3}
   spawnInterval: 6
   spawnAreaSize: {x: 5, y: 5}
+  enemyHealth: 5
 --- !u!4 &758759859
 Transform:
   m_ObjectHideFlags: 0
@@ -2794,6 +2811,7 @@ MonoBehaviour:
     type: 3}
   spawnInterval: 6
   spawnAreaSize: {x: 5, y: 5}
+  enemyHealth: 5
 --- !u!4 &1468944800
 Transform:
   m_ObjectHideFlags: 0
@@ -2930,7 +2948,7 @@ GameObject:
   - component: {fileID: 1754344919}
   m_Layer: 8
   m_Name: Balloon
-  m_TagString: Untagged
+  m_TagString: Balloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3211,7 +3229,6 @@ MonoBehaviour:
   winTime: 5
   playerShot: {fileID: 429230631}
   playerMov: {fileID: 718492942}
-  lives: 3
 --- !u!4 &1888914624
 Transform:
   m_ObjectHideFlags: 0
@@ -3967,3 +3984,9 @@ PrefabInstance:
       objectReference: {fileID: 577035539}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5d3130e9bb32e54385c368acca801e5, type: 3}
+--- !u!4 &7738235179572519894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7738235180953531447, guid: e5d3130e9bb32e54385c368acca801e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7738235179572519893}
+  m_PrefabAsset: {fileID: 0}
