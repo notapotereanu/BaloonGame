@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // Required for UI components
+using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
