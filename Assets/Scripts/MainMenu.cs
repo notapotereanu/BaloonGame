@@ -7,11 +7,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("MainScene");
         Debug.Log("MainScene loading");
-        // Game starts paused—ensure time is stopped and the pause menu is shown.
-        //Time.timeScale = 0f;
-        //isPaused = true; // Set isPaused to true to indicate the game is starting paused.
-        //if (pauseMenuPanel != null)
-        //    pauseMenuPanel.SetActive(true);
     }
 
 
