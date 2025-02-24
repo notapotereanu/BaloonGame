@@ -16,7 +16,7 @@ TextureImporter:
     second: CP_V1.0.4_3
   - first:
       213: 3777559525193862382
-    second: CP_V1.0.4_4
+    second: Red_South
   - first:
       213: 2481181708087501765
     second: CP_V1.0.4_5
@@ -572,6 +572,18 @@ TextureImporter:
   - first:
       213: 521744240781497875
     second: CP_V1.0.4_189
+  - first:
+      213: -5807345423987229988
+    second: Yellow South
+  - first:
+      213: 6063999500235286287
+    second: Green South
+  - first:
+      213: 398136482212819903
+    second: CP_V1.0.4_192000000000000000
+  - first:
+      213: 5149665052626901313
+    second: CP_V1.0.4_193
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -765,15 +777,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_4
+      name: Red_South
       rect:
         serializedVersion: 2
-        x: 392
-        y: 903
-        width: 32
-        height: 16
+        x: 575
+        y: 663
+        width: 4
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -852,10 +864,10 @@ TextureImporter:
       name: CP_V1.0.4_8
       rect:
         serializedVersion: 2
-        x: 413
+        x: 432
         y: 928
-        width: 35
-        height: 16
+        width: 16
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -896,8 +908,8 @@ TextureImporter:
         serializedVersion: 2
         x: 496
         y: 928
-        width: 35
-        height: 16
+        width: 16
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4658,7 +4670,7 @@ TextureImporter:
         width: 4
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4666,6 +4678,48 @@ TextureImporter:
       bones: []
       spriteID: 31613676f9b9d3700800000000000000
       internalID: 521744240781497875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow South
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 663
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda30430b1a286fa0800000000000000
+      internalID: -5807345423987229988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green South
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 663
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07aba1ca67a72450800000000000000
+      internalID: 6063999500235286287
       vertices: []
       indices: 
       edges: []
