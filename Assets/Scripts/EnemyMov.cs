@@ -7,21 +7,21 @@ public class EnemyMov : MonoBehaviour
     [SerializeField]
     float speed = 10f;
 
-    Transform playerTransform; // Reference to the player's transform
+    Transform balloonTransform; // Reference to the balloon's transform
     Vector3 initialScale;      // Store the initial scale of the sprite
 
     void Start()
     {
-        // Find the player by tag
-        GameObject player = GameObject.FindGameObjectWithTag("Balloon");
+        // Find the balloon by tag
+        GameObject balloon = GameObject.FindGameObjectWithTag("Balloon");
 
-        if (player != null)
+        if (balloon != null)
         {
-            playerTransform = player.transform;
+            balloonTransform = balloon.transform;
         }
         else
         {
-            Debug.LogError("Player not found. Make sure the player is tagged as 'Player'.");
+            Debug.LogError("Ballon not found. Make sure the balloon is tagged as 'Balloon'.");
         }
 
         // Store the initial scale of the enemy
@@ -30,19 +30,19 @@ public class EnemyMov : MonoBehaviour
 
     void Update()
     {
-        if (playerTransform == null) return;
+        if (balloonTransform == null) return;
 
-        // Flip the sprite based on the player's position
+        // Flip the sprite based on the balloon's position
         FlipSprite();
 
-        // Move toward the player
-        MoveTowardsPlayer();
+        // Move toward the balloon
+        MoveTowardsBalloon();
     }
 
     void FlipSprite()
     {
-        // Check if the player is to the left or right of the enemy
-        if (playerTransform.position.x < transform.position.x)
+        // Check if the balloon is to the left or right of the enemy
+        if (balloonTransform.position.x < transform.position.x)
         {
             // Flip the sprite to face left
             transform.localScale = new Vector3(-Mathf.Abs(initialScale.x), initialScale.y, initialScale.z);
@@ -54,10 +54,10 @@ public class EnemyMov : MonoBehaviour
         }
     }
 
-    void MoveTowardsPlayer()
+    void MoveTowardsBalloon()
     {
-        // Calculate the direction to the player
-        Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
+        // Calculate the direction to the balloon
+        Vector2 directionToPlayer = (balloonTransform.position - transform.position).normalized;
 
         // Move the enemy in the calculated direction
         transform.Translate(directionToPlayer * speed * Time.deltaTime, Space.World);
