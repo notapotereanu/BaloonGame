@@ -1,30 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMov : MonoBehaviour
 {
     [SerializeField]
-    float movementSpeed;
+    private float movementSpeed; // Movement speed of the player
+
+    private Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component
+    }
 
     void Update()
     {
-        // Handle movement
-        MovePlayer();
-
         // Handle flipping based on mouse position
         FlipSprite();
     }
 
-    void MovePlayer()
+    void FixedUpdate()
     {
         // Get input for horizontal and vertical movement
         float moveX = Input.GetAxis("Horizontal"); // A/D or Left/Right Arrow
         float moveY = Input.GetAxis("Vertical");   // W/S or Up/Down Arrow
 
-        // Move the player in 2D space
-        Vector2 movement = new Vector2(moveX, moveY);
-        transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
+        // Calculate the movement vector
+        Vector2 movement = new Vector2(moveX, moveY).normalized;
+
+        // Apply movement using velocity
+        rb.velocity = movement * movementSpeed;
     }
 
     void FlipSprite()
