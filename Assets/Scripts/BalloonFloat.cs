@@ -10,14 +10,10 @@ public class BalloonFloat : MonoBehaviour
     [SerializeField]
     private float force;
 
-    [SerializeField]
-    private Transform hand;
-
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     void FixedUpdate()
