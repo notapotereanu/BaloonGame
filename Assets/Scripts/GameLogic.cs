@@ -9,6 +9,7 @@ public class GameLogic : MonoBehaviour
     private int score = 0; // Player's score
     private float timer = 0f; // Game timer
     private bool gameEnded = false; // Track if the game has ended
+    private bool isPaused = false; // Track pause state
 
     [SerializeField]
     private Text scoreText;
@@ -37,12 +38,16 @@ public class GameLogic : MonoBehaviour
     [SerializeField]
     private PlayerMov playerMov;
 
+    // UI element for the pause overlay
+    [SerializeField]
+    private GameObject pauseOverlay;
+
     // Static variable to store lives across levels
     public static int lives = 3;
 
     void Start()
     {
-        // Initialize the game over text and button as hidden
+        // Initialize the game over text and buttons as hidden
         if (gameOverText != null)
         {
             gameOverText.gameObject.SetActive(false);
@@ -55,15 +60,25 @@ public class GameLogic : MonoBehaviour
         {
             tryAgainButton.gameObject.SetActive(false);
         }
-
+        // Hide the pause overlay at the start
+        if (pauseOverlay != null)
+        {
+            pauseOverlay.SetActive(false);
+        }
         // Update the lives UI at the start of the scene
         UpdateLivesUI();
     }
 
     void Update()
     {
-        // If the game has ended, stop updating
-        if (gameEnded)
+        // Check for pause/unpause input (P or Space)
+        if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Space))
+        {
+            TogglePause();
+        }
+
+        // If the game is paused or ended, do not update further game logic
+        if (isPaused || gameEnded)
         {
             return;
         }
@@ -71,7 +86,7 @@ public class GameLogic : MonoBehaviour
         // Update the timer every frame
         timer += Time.deltaTime;
 
-        // Update the UI text for the timer
+        // Update the UI text for lives
         if (livesText != null)
         {
             livesText.text = "Lives: " + lives;
@@ -84,10 +99,9 @@ public class GameLogic : MonoBehaviour
         }
 
         // Check for win condition 
-        if (!gameEnded && timer >= winTime)
+        if (timer >= winTime)
         {
             EndGame("YOU WIN!", true); // Pass true to indicate a win
-            gameEnded = true; // Ensure the game ends immediately
         }
     }
 
@@ -112,7 +126,6 @@ public class GameLogic : MonoBehaviour
     // Method to handle game over
     public void EndGame(string message, bool isWin = false)
     {
-        // If the game has already ended, return
         if (gameEnded)
         {
             return;
@@ -148,7 +161,8 @@ public class GameLogic : MonoBehaviour
                 nextLevelButton.gameObject.SetActive(true);
             }
         }
-        if (isWin != true && tryAgainButton != null)
+        // Show the try again button if it's not a win
+        if (!isWin && tryAgainButton != null)
         {
             tryAgainButton.gameObject.SetActive(true);
         }
@@ -192,16 +206,16 @@ public class GameLogic : MonoBehaviour
         if (lives > 0)
         {
             lives--;
-            UpdateLivesUI(); 
+            UpdateLivesUI();
             // Load the current level
             SceneManager.LoadScene(currentScene);
         }
         else
         {
-            // Load level 1
+            // Load level 1 and reset lives
             SceneManager.LoadScene("Level1");
-            lives = 3; // Reset lives 
-            UpdateLivesUI(); 
+            lives = 3;
+            UpdateLivesUI();
         }
     }
 
@@ -211,6 +225,41 @@ public class GameLogic : MonoBehaviour
         if (livesText != null)
         {
             livesText.text = "Lives: " + lives;
+        }
+    }
+
+    // Toggle between pause and resume
+    private void TogglePause()
+    {
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+    }
+
+    // Pauses the game, sets timescale to 0 and shows the pause overlay
+    private void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+        if (pauseOverlay != null)
+        {
+            pauseOverlay.SetActive(true);
+        }
+    }
+
+    // Resumes the game, resets timescale and hides the pause overlay
+    private void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        if (pauseOverlay != null)
+        {
+            pauseOverlay.SetActive(false);
         }
     }
 }
