@@ -13,9 +13,6 @@ public class BirdSpawner : MonoBehaviour
     [SerializeField]
     Vector2 spawnAreaSize = new Vector2(20, 20); // Size of the area (x, y) for 2D
 
-    [SerializeField]
-    private int enemyHealth = 3; // Default health for spawned enemies
-
     void Start()
     {
         // Start spawning enemies repeatedly
@@ -31,10 +28,7 @@ public class BirdSpawner : MonoBehaviour
         Vector2 randomPosition = GetRandomPosition();
 
         // Spawn the enemy
-        GameObject spawnedEnemy = Instantiate(enemyToSpawn, randomPosition, Quaternion.identity);
-
-        // Set the health of the spawned enemy
-        SetEnemyHealth(spawnedEnemy, enemyHealth);
+        Instantiate(enemyToSpawn, randomPosition, Quaternion.identity);
     }
 
     Vector2 GetRandomPosition()
@@ -46,22 +40,6 @@ public class BirdSpawner : MonoBehaviour
         );
 
         return (Vector2)transform.position + offset; // Offset from the spawner's position
-    }
-
-    // Method to set the health of the spawned enemy
-    private void SetEnemyHealth(GameObject enemy, int health)
-    {
-        // Get the EnemyHealth component from the spawned enemy
-        EnemyHealth enemyHealthComponent = enemy.GetComponent<EnemyHealth>();
-        if (enemyHealthComponent != null)
-        {
-            // Set the health of the enemy
-            enemyHealthComponent.SetHealth(health);
-        }
-        else
-        {
-            Debug.LogWarning("EnemyHealth component not found on the spawned enemy!");
-        }
     }
 
     void OnDrawGizmosSelected()
