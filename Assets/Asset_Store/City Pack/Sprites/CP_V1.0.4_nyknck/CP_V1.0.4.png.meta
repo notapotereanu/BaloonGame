@@ -7,7 +7,7 @@ TextureImporter:
     second: CP_V1.0.4_0
   - first:
       213: 2776858760641423503
-    second: CP_V1.0.4_1
+    second: Blue_Building
   - first:
       213: -3672914969698219484
     second: CP_V1.0.4_2
@@ -16,7 +16,7 @@ TextureImporter:
     second: CP_V1.0.4_3
   - first:
       213: 3777559525193862382
-    second: CP_V1.0.4_4
+    second: Red_South
   - first:
       213: 2481181708087501765
     second: CP_V1.0.4_5
@@ -37,7 +37,7 @@ TextureImporter:
     second: CP_V1.0.4_10
   - first:
       213: 5373855539387855405
-    second: CP_V1.0.4_11
+    second: Traffic_Barrier
   - first:
       213: -6791960327211408216
     second: CP_V1.0.4_12
@@ -52,7 +52,7 @@ TextureImporter:
     second: CP_V1.0.4_15
   - first:
       213: 6023890332652210146
-    second: CP_V1.0.4_16
+    second: Garbage
   - first:
       213: -7442772181592641934
     second: CP_V1.0.4_17
@@ -61,13 +61,13 @@ TextureImporter:
     second: CP_V1.0.4_18
   - first:
       213: 7534074235166975518
-    second: CP_V1.0.4_19
+    second: Shop_Blue
   - first:
       213: 4765299235684716044
-    second: CP_V1.0.4_20
+    second: Shop_Small_1
   - first:
       213: 8048336185474192458
-    second: CP_V1.0.4_21
+    second: Shop_Small_2
   - first:
       213: -2246916494574519807
     second: CP_V1.0.4_22
@@ -91,7 +91,7 @@ TextureImporter:
     second: CP_V1.0.4_28
   - first:
       213: -5696901393599595582
-    second: CP_V1.0.4_29
+    second: Grocery_Store
   - first:
       213: 6053452351487378463
     second: CP_V1.0.4_30
@@ -109,7 +109,7 @@ TextureImporter:
     second: CP_V1.0.4_34
   - first:
       213: -6573499069179118587
-    second: CP_V1.0.4_35
+    second: Sign_Park
   - first:
       213: 8382191946135571841
     second: CP_V1.0.4_36
@@ -118,16 +118,16 @@ TextureImporter:
     second: CP_V1.0.4_37
   - first:
       213: 6257519906740845522
-    second: CP_V1.0.4_38
+    second: Stoplight_South
   - first:
       213: -2925937579362945522
     second: CP_V1.0.4_39
   - first:
       213: 4946963429487303862
-    second: CP_V1.0.4_40
+    second: Stoplight_East
   - first:
       213: 90108948353388709
-    second: CP_V1.0.4_41
+    second: Stoplight_West
   - first:
       213: 7827795348807386922
     second: CP_V1.0.4_42
@@ -145,10 +145,10 @@ TextureImporter:
     second: CP_V1.0.4_46
   - first:
       213: 1730809677445362862
-    second: CP_V1.0.4_47
+    second: Bus
   - first:
       213: 5743340916458537025
-    second: CP_V1.0.4_48
+    second: Car_Horz_Green
   - first:
       213: -2638280106058780046
     second: CP_V1.0.4_49
@@ -391,7 +391,7 @@ TextureImporter:
     second: CP_V1.0.4_128
   - first:
       213: 5053080535304145544
-    second: CP_V1.0.4_129
+    second: Grass
   - first:
       213: 7597017124525067548
     second: CP_V1.0.4_130
@@ -439,7 +439,7 @@ TextureImporter:
     second: CP_V1.0.4_144
   - first:
       213: -3911530490410185909
-    second: CP_V1.0.4_145
+    second: Flower_Orange
   - first:
       213: 3598604604391445827
     second: CP_V1.0.4_146
@@ -472,10 +472,10 @@ TextureImporter:
     second: CP_V1.0.4_155
   - first:
       213: -6973836042693891968
-    second: CP_V1.0.4_156
+    second: Flower_Red
   - first:
       213: 2423147833568121674
-    second: CP_V1.0.4_157
+    second: Flower_Pink
   - first:
       213: -7063064034380076379
     second: CP_V1.0.4_158
@@ -496,7 +496,7 @@ TextureImporter:
     second: CP_V1.0.4_163
   - first:
       213: 500653117357479925
-    second: CP_V1.0.4_164
+    second: Flower_Blue
   - first:
       213: 6918197418461355644
     second: CP_V1.0.4_165
@@ -511,22 +511,97 @@ TextureImporter:
     second: CP_V1.0.4_168
   - first:
       213: 2440154691276720801
-    second: CP_V1.0.4_169
+    second: Car_Horz_Purple
   - first:
       213: 5170860915528928399
-    second: CP_V1.0.4_170
+    second: Car_Horz_Orange
   - first:
       213: 7231561054467071743
-    second: CP_V1.0.4_171
+    second: Building_Green
   - first:
       213: -2262216885420771978
-    second: CP_V1.0.4_172
+    second: Building_Purple
   - first:
       213: -4112432746184049252
-    second: CP_V1.0.4_173
+    second: Building_Brown
   - first:
       213: 2359573050269190905
-    second: CP_V1.0.4_174
+    second: Building_Grey
+  - first:
+      213: 1039337643353616930
+    second: Stoplight_North
+  - first:
+      213: 5989380104773257883
+    second: Car_Vert_Green
+  - first:
+      213: -5628445565995173712
+    second: Car_Vert_Purple
+  - first:
+      213: -6114225521588279675
+    second: Car_Vert_Orange
+  - first:
+      213: 6316292898407701204
+    second: Car_Vert_Blue
+  - first:
+      213: -2407293796624920957
+    second: Car_Horz_Red
+  - first:
+      213: 3719292344350786697
+    second: Car_Vert_Red
+  - first:
+      213: -4006287161028862056
+    second: Car_Horz_Yellow
+  - first:
+      213: 8441363910041752464
+    second: Car_Vert_Yellow
+  - first:
+      213: 8708530419780918196
+    second: Car_Vert_Teal
+  - first:
+      213: -5433050118417736933
+    second: Car_Horz_Teal
+  - first:
+      213: 2742282068803108256
+    second: Green_East
+  - first:
+      213: 1529930705882713033
+    second: Yellow_East
+  - first:
+      213: -4796571169521263554
+    second: Red_East
+  - first:
+      213: 521744240781497875
+    second: CP_V1.0.4_189
+  - first:
+      213: -5807345423987229988
+    second: Yellow_South
+  - first:
+      213: 6063999500235286287
+    second: Green_South
+  - first:
+      213: 398136482212819903
+    second: Shop_Green
+  - first:
+      213: 5149665052626901313
+    second: Shop_Purple
+  - first:
+      213: -1971649821340864179
+    second: Shop_Brown
+  - first:
+      213: 1985292919867828037
+    second: Shop_Grey
+  - first:
+      213: -6759762474471168280
+    second: Car_Horz_Blue
+  - first:
+      213: 8811942958038307367
+    second: Bus_Stop
+  - first:
+      213: -4602914400567956809
+    second: Bench_Horizontal
+  - first:
+      213: 8470211603650586152
+    second: Bench_Vertical
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -657,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_1
+      name: Building_Blue
       rect:
         serializedVersion: 2
         x: 112
@@ -720,13 +795,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_4
+      name: Red_South
       rect:
         serializedVersion: 2
-        x: 392
-        y: 903
-        width: 32
-        height: 16
+        x: 575
+        y: 663
+        width: 4
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -807,10 +882,10 @@ TextureImporter:
       name: CP_V1.0.4_8
       rect:
         serializedVersion: 2
-        x: 413
+        x: 432
         y: 928
-        width: 35
-        height: 16
+        width: 16
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,8 +926,8 @@ TextureImporter:
         serializedVersion: 2
         x: 496
         y: 928
-        width: 35
-        height: 16
+        width: 16
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -867,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_11
+      name: Traffic_Barrier
       rect:
         serializedVersion: 2
         x: 400
@@ -972,7 +1047,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_16
+      name: Garbage
       rect:
         serializedVersion: 2
         x: 401
@@ -1035,7 +1110,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_19
+      name: Shop_Blue
       rect:
         serializedVersion: 2
         x: 16
@@ -1056,7 +1131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_20
+      name: Shop_Small_1
       rect:
         serializedVersion: 2
         x: 112
@@ -1077,7 +1152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_21
+      name: Shop_Small_2
       rect:
         serializedVersion: 2
         x: 288
@@ -1245,7 +1320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_29
+      name: Grocery_Store
       rect:
         serializedVersion: 2
         x: 16
@@ -1371,7 +1446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_35
+      name: Sign_Park
       rect:
         serializedVersion: 2
         x: 496
@@ -1434,7 +1509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_38
+      name: Stoplight_South
       rect:
         serializedVersion: 2
         x: 388
@@ -1476,7 +1551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_40
+      name: Stoplight_East
       rect:
         serializedVersion: 2
         x: 468
@@ -1497,7 +1572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_41
+      name: Stoplight_West
       rect:
         serializedVersion: 2
         x: 500
@@ -1623,7 +1698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_47
+      name: Bus
       rect:
         serializedVersion: 2
         x: 16
@@ -1644,13 +1719,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_48
+      name: Car_Horz_Green
       rect:
         serializedVersion: 2
         x: 128
         y: 542
         width: 48
-        height: 30
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3345,7 +3420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_129
+      name: Grass
       rect:
         serializedVersion: 2
         x: 80
@@ -3681,7 +3756,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_145
+      name: Flower_Orange
       rect:
         serializedVersion: 2
         x: 104
@@ -3912,7 +3987,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_156
+      name: Flower_Red
       rect:
         serializedVersion: 2
         x: 87
@@ -3933,7 +4008,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_157
+      name: Flower_Pink
       rect:
         serializedVersion: 2
         x: 103
@@ -4080,7 +4155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_164
+      name: Flower_Blue
       rect:
         serializedVersion: 2
         x: 87
@@ -4185,12 +4260,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_169
+      name: Car_Horz_Purple
       rect:
         serializedVersion: 2
-        x: 127
+        x: 128
         y: 504
-        width: 49
+        width: 48
         height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4206,7 +4281,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_170
+      name: Car_Horz_Orange
       rect:
         serializedVersion: 2
         x: 128
@@ -4227,7 +4302,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_171
+      name: Building_Green
       rect:
         serializedVersion: 2
         x: 260
@@ -4248,7 +4323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_172
+      name: Building_Purple
       rect:
         serializedVersion: 2
         x: 197
@@ -4269,7 +4344,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_173
+      name: Building_Brown
       rect:
         serializedVersion: 2
         x: 330
@@ -4290,7 +4365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CP_V1.0.4_174
+      name: Building_Grey
       rect:
         serializedVersion: 2
         x: 390
@@ -4306,6 +4381,531 @@ TextureImporter:
       bones: []
       spriteID: 9fa41ea0033eeb020800000000000000
       internalID: 2359573050269190905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stoplight_North
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 624
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222b8c974187c6e00800000000000000
+      internalID: 1039337643353616930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Vert_Green
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 531
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a4dc1e87d8e1350800000000000000
+      internalID: 5989380104773257883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Vert_Purple
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 477
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b83c39149eb3e1b0800000000000000
+      internalID: -5628445565995173712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Vert_Orange
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 425
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5866a1d5848e52ba0800000000000000
+      internalID: -6114225521588279675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Vert_Blue
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 368
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dad9ea0deaf7a750800000000000000
+      internalID: 6316292898407701204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Horz_Red
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 306
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e8b2edb03979ed0800000000000000
+      internalID: -2407293796624920957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Vert_Red
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 308
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984cbd87ea49d9330800000000000000
+      internalID: 3719292344350786697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Horz_Yellow
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 365
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f9aa2ad0fc668c0800000000000000
+      internalID: -4006287161028862056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Vert_Yellow
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 368
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09357dd70cfb52570800000000000000
+      internalID: 8441363910041752464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Vert_Teal
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 308
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb99bae64aead870800000000000000
+      internalID: 8708530419780918196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Horz_Teal
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 306
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b11dce3bde994b0800000000000000
+      internalID: -5433050118417736933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_East
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 663
+        width: 2
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adbee8230b8e0620800000000000000
+      internalID: 2742282068803108256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_East
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 663
+        width: 2
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb0a1ffed76b3510800000000000000
+      internalID: 1529930705882713033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_East
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 663
+        width: 2
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c1ec44fe72f6db0800000000000000
+      internalID: -4796571169521263554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP_V1.0.4_189
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 521
+        width: 4
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31613676f9b9d3700800000000000000
+      internalID: 521744240781497875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_South
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 663
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda30430b1a286fa0800000000000000
+      internalID: -5807345423987229988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_South
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 663
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07aba1ca67a72450800000000000000
+      internalID: 6063999500235286287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shop_Green
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 41
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb33b6a6507768500800000000000000
+      internalID: 398136482212819903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shop_Purple
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 41
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149d11ec419477740800000000000000
+      internalID: 5149665052626901313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shop_Brown
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 41
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41f3890fea43a4e0800000000000000
+      internalID: -1971649821340864179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shop_Grey
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 42
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547e1df546d2d8b10800000000000000
+      internalID: 1985292919867828037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Horz_Blue
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 366
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6612f18df7032a0800000000000000
+      internalID: -6759762474471168280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bus_Stop
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 610
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722d0e2ce6f4a4a70800000000000000
+      internalID: 8811942958038307367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bench_Horizontal
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 165
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baed9e6db92f10c0800000000000000
+      internalID: -4602914400567956809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bench_Vertical
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 186
+        width: 9
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8262cff839c3c8570800000000000000
+      internalID: 8470211603650586152
       vertices: []
       indices: 
       edges: []
