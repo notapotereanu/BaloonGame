@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Sidewalk
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -727171967447212073, guid: bc86ee497e1f26945b10454e5861056c,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40107f387c845034e90013b647b36e47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
