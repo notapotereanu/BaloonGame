@@ -11,7 +11,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     private float smoothSpeed = 0.125f; // Smoothing speed for camera movement
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         if (player != null)
         {
