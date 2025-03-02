@@ -38,12 +38,17 @@ public class GameLogic : MonoBehaviour
     [SerializeField]
     private PlayerMov playerMov;
 
-    // UI element for the pause overlay
     [SerializeField]
-    private GameObject pauseOverlay;
+    private GameObject pauseOverlay; // UI element for the pause overlay
+
+    [SerializeField]
+    private AudioSource backgroundMusic; // Background music AudioSource
+
+    [SerializeField]
+    private AudioSource gameOverSong; // Game Over song AudioSource
 
     // Static variable to store lives across levels
-    public static int lives = 3;
+    public static int lives = 2;
 
     void Start()
     {
@@ -67,6 +72,12 @@ public class GameLogic : MonoBehaviour
         }
         // Update the lives UI at the start of the scene
         UpdateLivesUI();
+
+        // Ensure the Game Over song is not playing at the start
+        if (gameOverSong != null)
+        {
+            gameOverSong.Stop();
+        }
     }
 
     void Update()
@@ -89,7 +100,7 @@ public class GameLogic : MonoBehaviour
         // Update the UI text for lives
         if (livesText != null)
         {
-            livesText.text = "Lives: " + lives;
+            livesText.text = "Lives: " + (lives + 1);
         }
 
         // Update the UI text for the timer
@@ -135,6 +146,19 @@ public class GameLogic : MonoBehaviour
         gameEnded = true;
         Time.timeScale = 0f; // Stop all game activity
 
+        // Stop the background music
+        if (backgroundMusic != null)
+        {
+            backgroundMusic.Stop();
+        }
+
+        // Play the Game Over song in a loop if the player loses
+        if (!isWin && gameOverSong != null)
+        {
+            gameOverSong.loop = true;
+            gameOverSong.Play();
+        }
+
         // Disable the PlayerShot and PlayerMov scripts
         if (playerShot != null)
         {
@@ -171,6 +195,12 @@ public class GameLogic : MonoBehaviour
     // Method to load the next level
     public void GoToNextLevel()
     {
+        // Stop the Game Over song if it's playing
+        if (gameOverSong != null)
+        {
+            gameOverSong.Stop();
+        }
+
         Time.timeScale = 1f; // Unfreeze the game
 
         // Get the current scene name
@@ -198,6 +228,12 @@ public class GameLogic : MonoBehaviour
     // Method to try again if the player has lost
     public void TryAgain()
     {
+        // Stop the Game Over song if it's playing
+        if (gameOverSong != null)
+        {
+            gameOverSong.Stop();
+        }
+
         Time.timeScale = 1f; // Unfreeze the game
 
         // Get the current scene name
@@ -213,7 +249,7 @@ public class GameLogic : MonoBehaviour
         else
         {
             // Load level 1 and reset lives
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("MainMenu");
             lives = 3;
             UpdateLivesUI();
         }
@@ -250,6 +286,12 @@ public class GameLogic : MonoBehaviour
         {
             pauseOverlay.SetActive(true);
         }
+
+        // Pause the background music
+        if (backgroundMusic != null)
+        {
+            backgroundMusic.Pause();
+        }
     }
 
     // Resumes the game, resets timescale and hides the pause overlay
@@ -260,6 +302,12 @@ public class GameLogic : MonoBehaviour
         if (pauseOverlay != null)
         {
             pauseOverlay.SetActive(false);
+        }
+
+        // Resume the background music
+        if (backgroundMusic != null)
+        {
+            backgroundMusic.UnPause();
         }
     }
 }
