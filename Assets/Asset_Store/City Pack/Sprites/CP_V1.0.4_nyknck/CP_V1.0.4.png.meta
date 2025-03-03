@@ -3330,8 +3330,8 @@ TextureImporter:
       name: CP_V1.0.4_124
       rect:
         serializedVersion: 2
-        x: 226
-        y: 206
+        x: 224
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -3687,7 +3687,7 @@ TextureImporter:
       name: CP_V1.0.4_141
       rect:
         serializedVersion: 2
-        x: 226
+        x: 225
         y: 176
         width: 14
         height: 16
