@@ -602,6 +602,18 @@ TextureImporter:
   - first:
       213: 8470211603650586152
     second: Bench_Vertical
+  - first:
+      213: -1140811881635602984
+    second: Picnic_Blanket
+  - first:
+      213: -5236398816313174765
+    second: Picnic_Basket
+  - first:
+      213: 8190755928761767435
+    second: Plate
+  - first:
+      213: 682505540345472969
+    second: Bananas
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -4137,7 +4149,7 @@ TextureImporter:
       name: CP_V1.0.4_163
       rect:
         serializedVersion: 2
-        x: 144
+        x: 145
         y: 112
         width: 16
         height: 16
@@ -4906,6 +4918,90 @@ TextureImporter:
       bones: []
       spriteID: 8262cff839c3c8570800000000000000
       internalID: 8470211603650586152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Picnic_Blanket
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 567
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd909f43a50b20f0800000000000000
+      internalID: -1140811881635602984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Picnic_Basket
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 544
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315906b25039457b0800000000000000
+      internalID: -5236398816313174765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plate
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 543
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0615c7ee196ba170800000000000000
+      internalID: 8190755928761767435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bananas
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 515
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c727814c2fb87900800000000000000
+      internalID: 682505540345472969
       vertices: []
       indices: 
       edges: []
