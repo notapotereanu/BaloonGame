@@ -1881,7 +1881,7 @@ TextureImporter:
       name: CP_V1.0.4_55
       rect:
         serializedVersion: 2
-        x: 415
+        x: 417
         y: 480
         width: 18
         height: 27
@@ -3330,8 +3330,8 @@ TextureImporter:
       name: CP_V1.0.4_124
       rect:
         serializedVersion: 2
-        x: 224
-        y: 208
+        x: 226
+        y: 206
         width: 16
         height: 16
       alignment: 0
@@ -3687,9 +3687,9 @@ TextureImporter:
       name: CP_V1.0.4_141
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 176
-        width: 16
+        width: 14
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
