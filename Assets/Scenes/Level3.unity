@@ -85625,7 +85625,7 @@ MonoBehaviour:
   gameOverText: {fileID: 647783000}
   nextLevelButton: {fileID: 477241096}
   tryAgainButton: {fileID: 955853368}
-  winTime: 10
+  winTime: 180
   playerShot: {fileID: 311028740}
   playerMov: {fileID: 311028738}
   pauseOverlay: {fileID: 1625119226}
@@ -85655,7 +85655,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d7132463b856e3343b6cdc4034c96c4d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ed3a9c76e3f094a44974b4b0c88658c9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -85753,7 +85753,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc46d19bf6376c84f9827775d9f8b444, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
