@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public GameObject mainMenuCanvas;  // Assign in Inspector
+    public GameObject loadLevelCanvas; // Assign in Inspector
+    public GameObject guideLevelCanvas; // Assign in Inspector
+
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync("Level1");
@@ -27,6 +32,17 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Level 3 loading");
     }
 
+    public void ToggleGuideButton()
+    {
+        if (mainMenuCanvas != null)
+            mainMenuCanvas.SetActive(!mainMenuCanvas.activeSelf);
+
+        if (loadLevelCanvas != null)
+            loadLevelCanvas.SetActive(!loadLevelCanvas.activeSelf);
+
+        if (guideLevelCanvas != null)
+            guideLevelCanvas.SetActive(!guideLevelCanvas.activeSelf);
+    }
 
     // Called by the Exit Game button
     public void ExitGame()
