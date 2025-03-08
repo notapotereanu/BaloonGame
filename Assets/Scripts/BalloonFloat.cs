@@ -33,4 +33,12 @@ public class BalloonFloat : MonoBehaviour
         }
     
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.gameObject.GetComponent("Enemy"))
+        {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider, true);
+        }
+    }
 }

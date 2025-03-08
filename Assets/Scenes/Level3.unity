@@ -2284,7 +2284,7 @@ GameObject:
   - component: {fileID: 190731741}
   m_Layer: 0
   m_Name: RatSpawner (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3161,7 +3161,7 @@ GameObject:
   - component: {fileID: 273397902}
   m_Layer: 0
   m_Name: RatSpawner (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3800,7 +3800,7 @@ GameObject:
   - component: {fileID: 338674149}
   m_Layer: 0
   m_Name: BirdSpawner (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53109,7 +53109,7 @@ GameObject:
   - component: {fileID: 527187263}
   m_Layer: 0
   m_Name: BirdSpawner (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53387,7 +53387,7 @@ GameObject:
   - component: {fileID: 534533524}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54396,7 +54396,7 @@ GameObject:
   - component: {fileID: 576003267}
   m_Layer: 0
   m_Name: RatSpawner (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54670,7 +54670,7 @@ GameObject:
   - component: {fileID: 595269164}
   m_Layer: 0
   m_Name: BirdSpawner (10)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56577,7 +56577,7 @@ GameObject:
   - component: {fileID: 758759858}
   m_Layer: 0
   m_Name: BirdSpawner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57467,7 +57467,7 @@ GameObject:
   - component: {fileID: 808938999}
   m_Layer: 0
   m_Name: BirdSpawner (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58574,7 +58574,7 @@ GameObject:
   - component: {fileID: 918873875}
   m_Layer: 0
   m_Name: RatSpawner (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59475,7 +59475,7 @@ GameObject:
   - component: {fileID: 957058835}
   m_Layer: 0
   m_Name: BirdSpawner (11)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60161,7 +60161,7 @@ GameObject:
   - component: {fileID: 1039201648}
   m_Layer: 0
   m_Name: RatSpawner (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60393,7 +60393,7 @@ GameObject:
   - component: {fileID: 1056679636}
   m_Layer: 0
   m_Name: BirdSpawner (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60630,7 +60630,7 @@ GameObject:
   - component: {fileID: 1069450369}
   m_Layer: 0
   m_Name: RatSpawner (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62011,7 +62011,7 @@ GameObject:
   - component: {fileID: 1228585404}
   m_Layer: 0
   m_Name: BirdSpawner (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62312,7 +62312,7 @@ GameObject:
   - component: {fileID: 1252707209}
   m_Layer: 0
   m_Name: BirdSpawner (12)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64488,7 +64488,7 @@ GameObject:
   - component: {fileID: 1407117179}
   m_Layer: 0
   m_Name: BirdSpawner (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65409,7 +65409,7 @@ GameObject:
   - component: {fileID: 1468944799}
   m_Layer: 0
   m_Name: RatSpawner
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66042,7 +66042,7 @@ GameObject:
   - component: {fileID: 1508922093}
   m_Layer: 0
   m_Name: BirdSpawner (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66245,7 +66245,7 @@ GameObject:
   - component: {fileID: 1533019086}
   m_Layer: 0
   m_Name: RatSpawner (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66475,7 +66475,7 @@ GameObject:
   - component: {fileID: 1548672003}
   m_Layer: 0
   m_Name: RatSpawner (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83067,7 +83067,7 @@ GameObject:
   - component: {fileID: 1691632266}
   m_Layer: 0
   m_Name: BirdSpawner (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85553,7 +85553,7 @@ GameObject:
   - component: {fileID: 1885518524}
   m_Layer: 0
   m_Name: BirdSpawner (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87643,7 +87643,7 @@ GameObject:
   - component: {fileID: 2028117045}
   m_Layer: 0
   m_Name: RatSpawner (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
