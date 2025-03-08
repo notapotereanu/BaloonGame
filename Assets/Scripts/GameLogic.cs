@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameLogic : MonoBehaviour
 {
     private int score = 0; // Player's score
-    private float timer = 0f; // Game timer
+    private float timer = 180f; // // 3 minutes in seconds 
     private bool gameEnded = false; // Track if the game has ended
     private bool isPaused = false; // Track pause state
 
@@ -29,8 +29,8 @@ public class GameLogic : MonoBehaviour
     [SerializeField]
     private Button tryAgainButton;
 
-    [SerializeField]
-    private float winTime = 300f; // 5 minutes in seconds 
+    //[SerializeField]
+    //private float winTime = 180f; // 3 minutes in seconds 
 
     [SerializeField]
     private PlayerShot playerShot;
@@ -95,7 +95,7 @@ public class GameLogic : MonoBehaviour
         }
 
         // Update the timer every frame
-        timer += Time.deltaTime;
+        timer -= Time.deltaTime;
 
         // Update the UI text for lives
         if (livesText != null)
@@ -110,7 +110,7 @@ public class GameLogic : MonoBehaviour
         }
 
         // Check for win condition 
-        if (timer >= winTime)
+        if (timer == 0)
         {
             EndGame("YOU WIN!", true); // Pass true to indicate a win
         }
@@ -250,7 +250,7 @@ public class GameLogic : MonoBehaviour
         {
             // Load level 1 and reset lives
             SceneManager.LoadScene("MainMenu");
-            lives = 3;
+            lives = 2;
             UpdateLivesUI();
         }
     }

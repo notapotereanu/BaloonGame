@@ -69,7 +69,7 @@ public class PlayerMov : MonoBehaviour
         MovePlayer();
 
         // Handle flipping based on mouse position
-        FlipSprite();
+        //FlipSprite();
     }
 
     void MovePlayer()
@@ -84,6 +84,7 @@ public class PlayerMov : MonoBehaviour
         rb.velocity = new Vector2(moveX, moveY) * movementSpeed;
     }
 
+    /*
     void FlipSprite()
     {
         // Get the mouse position in world space
@@ -101,4 +102,5 @@ public class PlayerMov : MonoBehaviour
             transform.localScale = new Vector3(0.33f, 0.33f, 1);
         }
     }
+    */
 }
