@@ -16,6 +16,12 @@ public class PlayerShot : MonoBehaviour
     [SerializeField]
     float shootCooldown = 1f; // Time (in seconds) between shots
 
+    [SerializeField]
+    private LineRenderer lineRenderer; // Reference to the LineRenderer component
+
+    [SerializeField]
+    private float rayDuration = 0.5f; // Duration the ray stays visible
+
     float lastShootTime = -1f; // Tracks the last time the player shot
 
     private GameLogic gameLogic; // Reference to the GameLogic script
@@ -28,6 +34,22 @@ public class PlayerShot : MonoBehaviour
         {
             Debug.LogError("GameLogic script not found in the scene!");
         }
+
+        // Ensure the LineRenderer is initialized
+        if (lineRenderer == null)
+        {
+            lineRenderer = gameObject.AddComponent<LineRenderer>();
+        }
+
+        // Set up the LineRenderer
+        lineRenderer.startWidth = 0.1f;
+        lineRenderer.endWidth = 0.1f;
+        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        lineRenderer.startColor = Color.blue;
+        lineRenderer.endColor = Color.blue;
+
+        // Hide the LineRenderer initially
+        lineRenderer.enabled = false;
     }
 
     void Update()
@@ -61,6 +83,9 @@ public class PlayerShot : MonoBehaviour
             // Create a ray from the player's position to the target point
             Vector3 direction = (targetPoint - transform.position).normalized;
             Ray rayFromPlayer = new Ray(transform.position, direction);
+
+            // Draw the ray
+            DrawRay(rayFromPlayer.origin, rayFromPlayer.direction * maxShootDistance);
 
             // Check for a direct hit
             if (Physics2D.Raycast(transform.position, direction, maxShootDistance, collisionMask))
@@ -111,6 +136,28 @@ public class PlayerShot : MonoBehaviour
             Destroy(enemy);
             gameLogic.IncrementScore(); // Notify GameLogic to increment the score
         }
+    }
+
+    void DrawRay(Vector3 start, Vector3 end)
+    {
+        // Enable the LineRenderer
+        lineRenderer.enabled = true;
+
+        // Set the positions of the LineRenderer
+        lineRenderer.SetPosition(0, start);
+        lineRenderer.SetPosition(1, start + end);
+
+        // Start a coroutine to hide the ray after a short duration
+        StartCoroutine(HideRayAfterDelay());
+    }
+
+    IEnumerator HideRayAfterDelay()
+    {
+        // Wait for the specified duration
+        yield return new WaitForSeconds(rayDuration);
+
+        // Disable the LineRenderer
+        lineRenderer.enabled = false;
     }
 }
 
