@@ -1078,6 +1078,7 @@ Transform:
   - {fileID: 1242585710}
   - {fileID: 1504442436}
   - {fileID: 1625119227}
+  - {fileID: 534533524}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2317,7 +2318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 20
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &191810739
 PrefabInstance:
@@ -3194,7 +3195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &277992594
 PrefabInstance:
@@ -3833,7 +3834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1 &350540979
 GameObject:
@@ -53142,7 +53143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &529170116
 PrefabInstance:
@@ -53399,8 +53400,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534533523}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.35065, y: 12.838371, z: -1.4168578}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -112.04935, y: 48.33837, z: -1.4168578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1468944800}
@@ -53426,8 +53427,8 @@ Transform:
   - {fileID: 595269163}
   - {fileID: 957058834}
   - {fileID: 1252707208}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 70481198}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &535161495
 PrefabInstance:
@@ -54429,7 +54430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1 &581371993
 GameObject:
@@ -54703,7 +54704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &600009183
 PrefabInstance:
@@ -56596,7 +56597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!4 &758759859
 Transform:
@@ -57500,7 +57501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &816154284
 PrefabInstance:
@@ -57932,7 +57933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43529412, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -58607,7 +58608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 12
   spawnAreaSize: {x: 10, y: 5}
 --- !u!1001 &920771829
 PrefabInstance:
@@ -59508,7 +59509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 20
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &957736173
 PrefabInstance:
@@ -60194,7 +60195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 20
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1 &1042950889
 GameObject:
@@ -60426,7 +60427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1 &1062314599
 GameObject:
@@ -60663,7 +60664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 20
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1 &1070784678
 GameObject:
@@ -62044,7 +62045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &1229240871
 PrefabInstance:
@@ -62345,7 +62346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 20
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &1258215374
 PrefabInstance:
@@ -64078,10 +64079,10 @@ RectTransform:
   m_Father: {fileID: 1901464875}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -400, y: -39.93}
-  m_SizeDelta: {x: 200, y: 79.86983}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381188005
 MonoBehaviour:
@@ -64096,7 +64097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43529412, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -64521,7 +64522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &1418903095
 PrefabInstance:
@@ -65428,7 +65429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!4 &1468944800
 Transform:
@@ -65790,7 +65791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43529412, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -66075,7 +66076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &1523524895
 PrefabInstance:
@@ -66278,7 +66279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 20
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &1537188928
 PrefabInstance:
@@ -66508,7 +66509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 20
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1 &1551959264
 GameObject:
@@ -83100,7 +83101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1001 &1693722920
 PrefabInstance:
@@ -85586,7 +85587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 2644052312111316036, guid: 0e0234e9bcf2cb045a11933d9c0a14f0,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 12
   spawnAreaSize: {x: 5, y: 5}
 --- !u!1 &1888914622
 GameObject:
@@ -87676,7 +87677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratPrefab: {fileID: 1308752229861599997, guid: 3cf33198f7e48e14a9cac44adc58e542,
     type: 3}
-  spawnInterval: 6
+  spawnInterval: 20
   spawnAreaSize: {x: 8, y: 5}
 --- !u!1001 &2029807308
 PrefabInstance:
