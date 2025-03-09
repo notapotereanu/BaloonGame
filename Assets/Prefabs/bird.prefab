@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2644052312111316058}
   - component: {fileID: 2644052312111316059}
   - component: {fileID: 1342118154556778596}
-  - component: {fileID: 437919338121237184}
+  - component: {fileID: 9156669321293100773}
   m_Layer: 0
   m_Name: bird
   m_TagString: Enemy
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: d8edcc1a41900d243b35a23f62c85ab2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bc9bdc6b181674d87f05cc321226b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 8
 --- !u!61 &1342118154556778596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.59, y: 3.01}
+    oldSize: {x: 6.48, y: 7.53}
     newSize: {x: 2.59, y: 3.01}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.59, y: 3.01}
   m_EdgeRadius: 0
---- !u!82 &437919338121237184
+--- !u!82 &9156669321293100773
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cd4a4b3e5a34b994aa3dc95890528919, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1308752229861599995}
   - component: {fileID: 1308752229861599994}
   - component: {fileID: 6372327426847708765}
-  - component: {fileID: 8464598938566850653}
+  - component: {fileID: 3976386345462304248}
   m_Layer: 0
   m_Name: rat
   m_TagString: Enemy
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 9b9fc720e984c3c4fb4b4256635162e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bc9bdc6b181674d87f05cc321226b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 8
 --- !u!61 &6372327426847708765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -114,7 +114,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.16, y: 1.35}
+    oldSize: {x: 6.84, y: 4.41}
     newSize: {x: 2.16, y: 1.35}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.16, y: 1.35}
   m_EdgeRadius: 0
---- !u!82 &8464598938566850653
+--- !u!82 &3976386345462304248
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a3851ca461a65c34fb7e9ff0e9d1bc4f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
