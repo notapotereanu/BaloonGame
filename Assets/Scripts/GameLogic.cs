@@ -29,9 +29,6 @@ public class GameLogic : MonoBehaviour
     [SerializeField]
     private Button tryAgainButton;
 
-    //[SerializeField]
-    //private float winTime = 180f; // 3 minutes in seconds 
-
     [SerializeField]
     private PlayerShot playerShot;
 
@@ -106,11 +103,11 @@ public class GameLogic : MonoBehaviour
         // Update the UI text for the timer
         if (timerText != null)
         {
-            timerText.text = "Time: " + Mathf.FloorToInt(timer).ToString();
+            timerText.text = "Time: " + Mathf.FloorToInt(timer +1).ToString();
         }
 
         // Check for win condition 
-        if (timer == 0)
+        if (timer <= 0)
         {
             EndGame("YOU WIN!", true); // Pass true to indicate a win
         }
@@ -180,10 +177,11 @@ public class GameLogic : MonoBehaviour
         if (isWin && nextLevelButton != null)
         {
             string currentScene = SceneManager.GetActiveScene().name;
-            if (currentScene != "Level3")
+            if (currentScene != "MainMenu")
             {
                 nextLevelButton.gameObject.SetActive(true);
             }
+            
         }
         // Show the try again button if it's not a win
         if (!isWin && tryAgainButton != null)
@@ -215,6 +213,9 @@ public class GameLogic : MonoBehaviour
                 break;
             case "Level2":
                 nextLevel = "Level3";
+                break;
+            case "Level3":
+                nextLevel = "MainMenu";
                 break;
             default:
                 Debug.LogWarning("No next level defined for: " + currentScene);
